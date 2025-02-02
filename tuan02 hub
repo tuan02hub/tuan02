@@ -3,7 +3,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
        local Window = MakeWindow({
          Hub = {
          Title = "tuan02 hub",
-         Animation = "hello"
+         Animation = "hello "
          },
         Key = {
         KeySystem = false,
@@ -21,7 +21,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
   })
 
        MinimizeButton({
-       Image = "https://create.roblox.com/store/asset/77373656661727",
+       Image = "https://create.roblox.com/store/asset/112014269239860/nh?assetType=Decal&externalSource=www",
        Size = {60, 60},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
@@ -30,9 +30,9 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       })
       
 ------ Tab
-     local Tab1o = MakeTab({Name = "script tổng hợp cho pc"})
-     local Tab2o = MakeTab({Name = "..."})
-     local Tab3o = MakeTab({Name = "..."})
+     local Tab1o = MakeTab({Name = "script cho pc"})
+     local Tab2o = MakeTab({Name = "script cho pe"})
+     local Tab3o = MakeTab({Name = "scrpt cho pe và pc"})
      
      
 -------TOGGLE 
@@ -57,7 +57,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
   end
-  })   AddButton(Tab1o, {
+  })   AddButton(Tab2o, {
      Name = " script của  trẩu roblox ( dành cho mobile)",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs/heads/main/TrauXt"))()
@@ -74,11 +74,40 @@ getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performanc
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
   end
   })
-      
+       AddButton(Tab2o, { 
+     Name = " script Tự động Farm, Esp, Teleport Mobile Script(min gaming)",
+    Callback = function()
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinN"))() 
+  end
+  })
+       AddButton(Tab2o, { 
+     Name = " script Tự động Farm, Esp, Teleport Mobile Script(Xero hub)",
+    Callback = function()
+        getgenv().Team = "Marines"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+  end
+  })
+       AddButton(Tab2o, {
+     Name = " script của xero hub",
+    Callback = function()
+	  getgenv().Team = "Marines"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+  end
+  }) 
+ AddButton(Tab1o, {
+     Name = " script của God Hub",
+    Callback = function()
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua"))()
+  end
+  })
 ----- Section 
    
-   Section = AddSection(Tab1o, {"a"})          
+   Section = AddSection(Tab1o, {""})          
 
 ----- Paragraph 
                     
-   Paragraph = AddParagraph(Farm, {"a", ""})
+   Paragraph = AddParagraph(Farm, {"", ""})
