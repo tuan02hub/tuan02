@@ -22,7 +22,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
        MinimizeButton({
        Image = "https://create.roblox.com/store/asset/112014269239860/nh?assetType=Decal&externalSource=www",
-       Size = {60, 60},
+       Size = {50, 40},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
        Stroke = false,
@@ -30,9 +30,9 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       })
       
 ------ Tab
-     local Tab1o = MakeTab({Name = "script cho pc"})
-     local Tab2o = MakeTab({Name = "script cho pe"})
-     local Tab3o = MakeTab({Name = "scrpt cho pe và pc"})
+     local Tab1o = MakeTab({Name = "script  pc"})
+     local Tab2o = MakeTab({Name = "script  pe"})
+     local Tab3o = MakeTab({Name = "nhặt rương"})
      
      
 -------TOGGLE 
@@ -104,14 +104,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs
           loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua"))()
   end
   })
-       AddButton(Tab1o, { 
+       AddButton(Tab3o, { 
      Name = " tự nhặt rương (sea 2)",
     Callback = function()
           loadstring(game:HttpGet("https://gist.githubusercontent.com/Yomkaa/cb706db9b2f3862d11f17d2dd71aaa80/raw/d62aa5a6bf5d79647c236281fc0556c44778e5a6/YOMKA%20CHEST%20FARM%20(%20ONLY%20SECOND%20SEA)",true))()
   end
   })
 
-       AddButton(Tab1o, { 
+       AddButton(Tab3o, { 
      Name = " tự nhặt rương (sea 3)",
     Callback = function()
          loadstring(game:HttpGet("https://gist.githubusercontent.com/Yomkaa/daa5e464529c6b1d55573d73dbd77a0c/raw/12b1ab7d384aad2beea357b8f68c705a155fc1c8/YOMKA%20CHEST%20FARM%20(%20ONLY%20THIRD%20SEA)",true))()
@@ -119,7 +119,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs
   })
 ----- Section 
    
-   Section = AddSection(Tab1o, {""})          
+   Section = AddSection(Tab1o, {"đăng ký tuan02 chưa?"})          
 
 ----- Paragraph 
                     
